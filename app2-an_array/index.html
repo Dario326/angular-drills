@@ -1,9 +1,21 @@
 <html ng-app="arrayApp">
 	<head>
-		<link rel="stylesheet" href="style.css"></link>
+		<link rel="stylesheet" href="style.css">
 	</head>
-	<body ng-controller="arrayController">
-	
+	<body ng-controller="arrayCtrl">
+       
+	    <div>
+	        <ul>
+	            <div ng-repeat="person in people">
+	                <li>{{person.name}}</li>
+	                <li>{{person.email}}</li>
+	                <li>{{person.dateEmployed}}</li>
+	                <li>{{person.phone}}</li>
+	            </div>
+	        </ul>
+	    </div>
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
